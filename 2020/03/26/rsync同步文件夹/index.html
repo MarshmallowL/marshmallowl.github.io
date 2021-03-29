@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>rsync同步备份 - liugs blog</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="canonical" href="https://marshmallowl.github.io/2020/03/26/rsync%E5%90%8C%E6%AD%A5%E6%96%87%E4%BB%B6%E5%A4%B9/">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<meta name="description" content="文章来源  rsync文件同步详解 linux配置rsync服务端  rsync简介  rsync是linux系统下的数据镜像备份工具。使用快速增量备份工具Remote Sync可以远程同步，支持本地复制，或者与其他SSH、rsync主机同步。  安装rsync(centos默认安装了) 123yum -y install rsync#查看版本rsync --version 环境说明   PC1:">
+<meta property="og:type" content="website">
+<meta property="og:title" content="rsync同步备份">
+<meta property="og:url" content="https://marshmallowl.github.io/2020/03/26/rsync%E5%90%8C%E6%AD%A5%E6%96%87%E4%BB%B6%E5%A4%B9/index.html">
+<meta property="og:site_name" content="liugs blog">
+<meta property="og:description" content="文章来源  rsync文件同步详解 linux配置rsync服务端  rsync简介  rsync是linux系统下的数据镜像备份工具。使用快速增量备份工具Remote Sync可以远程同步，支持本地复制，或者与其他SSH、rsync主机同步。  安装rsync(centos默认安装了) 123yum -y install rsync#查看版本rsync --version 环境说明   PC1:">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://up.enterdesk.com/edpic/a7/f6/b0/a7f6b068bed40a47dfe354aa4c9ca470.jpeg">
+<meta property="article:published_time" content="2020-03-26T08:02:06.000Z">
+<meta property="article:modified_time" content="2021-03-29T14:25:07.890Z">
+<meta property="article:author" content="liugs">
+<meta property="article:tag" content="util">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://up.enterdesk.com/edpic/a7/f6/b0/a7f6b068bed40a47dfe354aa4c9ca470.jpeg">
+<script type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","publisher":{"@type":"Person","name":"liugs","description":"Stay foolish,Stay hungry","image":"https://up.enterdesk.com/edpic/a7/f6/b0/a7f6b068bed40a47dfe354aa4c9ca470.jpeg"},"url":"https://marshmallowl.github.io","image":"https://up.enterdesk.com/edpic/a7/f6/b0/a7f6b068bed40a47dfe354aa4c9ca470.jpeg","description":"","author":{"@type":"Person","name":"liugs","description":"Stay foolish,Stay hungry","image":"https://up.enterdesk.com/edpic/a7/f6/b0/a7f6b068bed40a47dfe354aa4c9ca470.jpeg"},"inLanguage":{"@type":"Language","alternateName":"en"}},{"@context":"http://schema.org","@type":"Article","articleSection":"实用工具","url":"https://marshmallowl.github.io/2020/03/26/rsync%E5%90%8C%E6%AD%A5%E6%96%87%E4%BB%B6%E5%A4%B9/","headline":"rsync同步备份","image":"https://up.enterdesk.com/edpic/a7/f6/b0/a7f6b068bed40a47dfe354aa4c9ca470.jpeg","datePublished":"2020-03-26T08:02:06.000Z","dateModified":"2021-03-29T14:25:07.890Z","keywords":"util","description":"","publisher":{"@type":"Organization","name":"liugs blog","logo":{"@type":"ImageObject","url":"https://up.enterdesk.com/edpic/a7/f6/b0/a7f6b068bed40a47dfe354aa4c9ca470.jpeg"}},"author":{"@type":"Person","name":"liugs","description":"Stay foolish,Stay hungry","image":"https://up.enterdesk.com/edpic/a7/f6/b0/a7f6b068bed40a47dfe354aa4c9ca470.jpeg"},"inLanguage":{"@type":"Language","alternateName":"en"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://marshmallowl.github.io/2020/03/26/rsync%E5%90%8C%E6%AD%A5%E6%96%87%E4%BB%B6%E5%A4%B9/"}}]</script>
+
+<!-- hexo injector head_end start --><link href="//cdn.jsdelivr.net/gh/fiteen/fiteen.github.io@v0.1.0/font.css" rel="stylesheet"><link href="/styles.43478ea7e28ed563c48b.css" rel="stylesheet">
+<script src="/config.0cd4e5151250d5bf02ad.js"></script>
+
+<link rel="stylesheet" href="/theme.0438223c0aee9549ff0c.css" is="theme">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.2.0"></head>
+<body lang="en"><!-- hexo injector body_begin start --><is-a></is-a><!-- hexo injector body_begin end --><!-- hexo injector body_end start --><script src="/runtime.b15aa7186c559b492b7d.js"></script><script src="/polyfills.824ff89b5f3ca4543a31.js"></script><script src="/main.03652fc423a687c817e8.js"></script><!-- hexo injector body_end end --></body>
+</html>
